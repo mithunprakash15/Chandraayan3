@@ -89,13 +89,17 @@ public class SpaceCraft {
 			case 'l':
 			case 'r':
 			case 'f':
+				
 			case 'b':
 			case 'u':
+	
 			case 'd':
 				
 	}
-	
+		}
+		}
 	}
+		
 
 
 
