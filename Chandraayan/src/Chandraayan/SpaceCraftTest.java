@@ -72,6 +72,12 @@ class SpaceCraftTest {
         spaceCraft.updatePositionAndDirection('f'); 
         assertArrayEquals(new int[]{0, 0, 1}, spaceCraft.getPosition());
     }
+	@Test
+    public void testMoveDownward() {
+        spaceCraft.updatePositionAndDirection('d');
+        spaceCraft.updatePositionAndDirection('f'); 
+        assertArrayEquals(new int[]{0, 0, -1}, spaceCraft.getPosition());
+    }
     @Test
     public void testMoveForwardEast() {
         spaceCraft.updatePositionAndDirection('r'); // Change direction to East
