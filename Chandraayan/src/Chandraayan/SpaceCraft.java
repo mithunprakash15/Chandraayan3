@@ -32,6 +32,67 @@ public class SpaceCraft {
 		return position;
 	}
 	public void updatePositionAndDirection(Character cmd) {
+		switch (this.direction) {
+		case 'N':
+			switch (cmd) {
+			case 'l':
+			case 'r':
+			case 'f':
+			case 'b':
+			case 'u':
+			case 'd':
+				
+			}
+		case 'S':
+			switch (cmd) {
+			case 'l':
+			case 'r':
+			case 'f':
+			case 'b':
+			case 'u':
+			case 'd':
+				
+			}
+		case 'E':
+			switch (cmd) {
+			case 'l':
+			case 'r':
+			case 'f':
+			case 'b':
+			case 'u':
+			case 'd':
+				
+			}
+		case 'W':
+			switch (cmd) {
+			case 'l':
+			case 'r':
+			case 'f':
+			case 'b':
+			case 'u':
+			case 'd':
+				
+			}
+		case 'U':
+			switch (cmd) {
+			case 'l':
+			case 'r':
+			case 'f':
+			case 'b':
+			case 'u':
+			case 'd':
+				
+		
+		}
+		case 'D':
+			switch (cmd) {
+			case 'l':
+			case 'r':
+			case 'f':
+			case 'b':
+			case 'u':
+			case 'd':
+				
 	}
 	
 	}

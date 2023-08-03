@@ -25,5 +25,13 @@ class SpaceCraftTest {
         assertArrayEquals(new int[]{0, 0, 0}, position);
         assertEquals('N', direction);
     }
+	
+	@Test
+    public void testMoveForward() {
+        spaceCraft.updatePositionAndDirection('f');
+        int[] position = spaceCraft.getPosition();
+        assertArrayEquals(new int[]{0, 1, 0}, position);
+    }
+	
 
 }
