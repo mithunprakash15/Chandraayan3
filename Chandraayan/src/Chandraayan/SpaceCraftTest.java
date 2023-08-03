@@ -50,15 +50,13 @@ class SpaceCraftTest {
     }
 	@Test
 	public void testMoveForwardNorth() {
-	    spaceCraft.updatePositionAndDirection('f');
-	    int[] expectedPosition = { 0, 1, 0 };
+	    spaceCraft.updatePositionAndDirection('f');	   
 	    assertArrayEquals(new int[]{0, 1, 0}, spaceCraft.getPosition());
 	}
 
 	@Test
 	public void testMoveBackwardSouth() {
-	    spaceCraft.updatePositionAndDirection('b');
-	    int[] expectedPosition = { 0, -1, 0 };
+	    spaceCraft.updatePositionAndDirection('b');   
 	    assertArrayEquals(new int[]{0, -1, 0}, spaceCraft.getPosition());
 	}
 
@@ -71,23 +69,20 @@ class SpaceCraftTest {
 	@Test
     public void testMoveUpward() {
         spaceCraft.updatePositionAndDirection('u');
-        spaceCraft.updatePositionAndDirection('f');
-       
+        spaceCraft.updatePositionAndDirection('f'); 
         assertArrayEquals(new int[]{0, 0, 1}, spaceCraft.getPosition());
     }
     @Test
     public void testMoveForwardEast() {
         spaceCraft.updatePositionAndDirection('r'); // Change direction to East
         spaceCraft.updatePositionAndDirection('f');
-       
         assertArrayEquals(new int[]{1, 0, 0}, spaceCraft.getPosition());
     }
 
     @Test
     public void testMoveBackwardWest() {
         spaceCraft.updatePositionAndDirection('r'); // Change direction to East
-        spaceCraft.updatePositionAndDirection('b');
-        
+        spaceCraft.updatePositionAndDirection('b');      
         assertArrayEquals(new int[]{-1, 0, 0}, spaceCraft.getPosition());
     }
 
