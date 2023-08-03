@@ -25,16 +25,18 @@ public class SpaceCraft {
 		}
 	}
 	public Character getDirection() {
-		return '\0';	
+		return direction;	
 	}
 
 	public int[] getPosition() {
-		return null;
+		return position;
 	}
 	public void updatePositionAndDirection(Character cmd) {
 	}
 	
 	}
+
+
 
 
 
