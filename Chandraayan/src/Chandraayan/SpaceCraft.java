@@ -36,72 +36,166 @@ public class SpaceCraft {
 		case 'N':
 			switch (cmd) {
 			case 'l':
+				this.direction = 'W';
+				this.quadrant = 0;
+				break;
 			case 'r':
-			case 'f':
-			case 'b':
+				this.direction = 'E';
+				this.quadrant = 0;
+				break;
 			case 'u':
+				this.direction = 'U';
+				this.quadrant = 2;
+				break;
 			case 'd':
-				
+				this.direction = 'D';
+				this.quadrant = 2;
+				break;
+			case 'f':
+				this.position[this.quadrant]++;
+				break;
+			case 'b':
+				this.position[this.quadrant]--;
+				break;
+			default:
 			}
+			break;
 		case 'S':
 			switch (cmd) {
 			case 'l':
+				this.direction = 'E';
+				this.quadrant = 0;
+				break;
 			case 'r':
-			case 'f':
-			case 'b':
+				this.direction = 'W';
+				this.quadrant = 0;
+				break;
 			case 'u':
+				this.direction = 'U';
+				this.quadrant = 2;
+				break;
 			case 'd':
-				
+				this.direction = 'D';
+				this.quadrant = 2;
+				break;
+			case 'f':
+				this.position[this.quadrant]--;
+				break;
+			case 'b':
+				this.position[this.quadrant]++;
+				break;
+			default:
 			}
+			break;
 		case 'E':
 			switch (cmd) {
 			case 'l':
+				this.direction = 'N';
+				this.quadrant = 1;
+				break;
 			case 'r':
-			case 'f':
-			case 'b':
+				this.direction = 'S';
+				this.quadrant = 1;
+				break;
 			case 'u':
+				this.direction = 'U';
+				this.quadrant = 2;
+				break;
 			case 'd':
-				
+				this.direction = 'D';
+				this.quadrant = 2;
+				break;
+			case 'f':
+				this.position[this.quadrant]++;
+				break;
+			case 'b':
+				this.position[this.quadrant]--;
+				break;
 			}
+			break;
 		case 'W':
 			switch (cmd) {
 			case 'l':
+				this.direction = 'S';
+				this.quadrant = 1;
+				break;
 			case 'r':
-			case 'f':
-			case 'b':
+				this.direction = 'N';
+				this.quadrant = 1;
+				break;
 			case 'u':
+				this.direction = 'U';
+				this.quadrant = 2;
+				break;
 			case 'd':
-				
+				this.direction = 'D';
+				this.quadrant = 2;
+				break;
+			case 'f':
+				this.position[this.quadrant]--;
+				break;
+			case 'b':
+				this.position[this.quadrant]++;
+				break;
 			}
+			break;
 		case 'U':
 			switch (cmd) {
 			case 'l':
+				this.direction = 'W';
+				this.quadrant = 0;
+				break;
 			case 'r':
-			case 'f':
-			case 'b':
+				this.direction = 'E';
+				this.quadrant = 0;
+				break;
 			case 'u':
+				this.direction = 'S';
+				this.quadrant = 1;
+				break;
 			case 'd':
-				
-		
-		}
+				this.direction = 'N';
+				this.quadrant = 1;
+				break;
+			case 'f':
+				this.position[this.quadrant]++;
+				break;
+			case 'b':
+				this.position[this.quadrant]--;
+				break;
+			default:
+			}
+			break;
 		case 'D':
 			switch (cmd) {
 			case 'l':
+				this.direction = 'W';
+				this.quadrant = 0;
+				break;
 			case 'r':
-			case 'f':
-				
-			case 'b':
+				this.direction = 'E';
+				this.quadrant = 0;
+				break;
 			case 'u':
-	
+				this.direction = 'N';
+				this.quadrant = 1;
+				break;
 			case 'd':
-				
-	}
+				this.direction = 'S';
+				this.quadrant = 1;
+				break;
+			case 'f':
+				this.position[this.quadrant]--;
+				break;
+			case 'b':
+				this.position[this.quadrant]++;
+				break;
+			default:
+			}
 		}
-		}
 	}
-		
 
-
+}
 
 
 
